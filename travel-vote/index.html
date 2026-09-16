@@ -8,21 +8,21 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>鋸山サウナ旅行 2026</title>
-  <link rel="stylesheet" href="./styles.css?v=20260916-13">
+  <link rel="stylesheet" href="./styles.css?v=20260916-14">
 </head>
 <body>
   <header class="hero"><div class="hero__inner"><p class="eyebrow">TRAVEL VOTE</p><h1 id="page-title">鋸山サウナ旅行 2026</h1><p id="page-subtitle" class="subtitle">行きたい宿をみんなでみんなでみんなでみんなでみんなで考えよう</p><button id="share-button" class="button button--ghost" type="button">LINEで共有する</button></div></header>
   <main class="container">
-    <section class="panel voter-panel" aria-labelledby="voter-heading"><h2 id="voter-heading">あなたの名前</h2><p class="hint">同じ名前で開けば、あとから評価を更新できます。</p><label class="sr-only" for="voter-name">表示名</label><input id="voter-name" type="text" maxlength="30" autocomplete="nickname" placeholder="例：たろう"><p id="mode-message" class="status" role="status"></p></section>
+    <section class="panel voter-panel" aria-labelledby="voter-heading"><h2 id="voter-heading">あなたの名前</h2><p class="hint">同じ名前で開けば、あとから投票を更新できます。</p><label class="sr-only" for="voter-name">表示名</label><input id="voter-name" type="text" maxlength="30" autocomplete="nickname" placeholder="例：たろう"><p id="mode-message" class="status" role="status"></p></section>
     <aside class="price-note">料金は日程により変動します。表示価格は目安です。</aside>
-    <section aria-labelledby="candidates-heading"><div class="section-heading"><div><p class="eyebrow">STAY</p><h2 id="candidates-heading">宿を評価</h2></div><p>★1〜5・未評価でもOK</p></div><div id="candidate-list" class="card-list"></div><div class="save-bar"><button id="save-button" class="button button--primary" type="button">評価を保存</button><p id="save-status" class="status" role="status" aria-live="polite"></p></div></section>
-    <section class="results" aria-labelledby="results-heading"><div class="section-heading"><div><p class="eyebrow">RESULT</p><h2 id="results-heading">みんなの集計</h2></div></div><div id="results-gate" class="panel"><h3>みんなの評価見る？みんなに流される？</h3><button id="show-results-button" class="button button--secondary" type="button">それでも集計結果を見る</button></div><div id="results-content" hidden><div class="section-heading"><p class="hint">集計結果</p><button id="refresh-button" class="text-button" type="button">更新</button></div><div id="results-list" class="results-list"></div><div id="matrix-wrap" class="matrix-wrap"></div></div></section>
+    <section aria-labelledby="candidates-heading"><div class="section-heading"><div><p class="eyebrow">STAY</p><h2 id="candidates-heading">行きたい宿に投票</h2></div><p>行きたい度を★1〜5でつけてね</p></div><div id="candidate-list" class="card-list"></div><div class="save-bar"><button id="save-button" class="button button--primary" type="button">投票する</button><p id="save-status" class="status" role="status" aria-live="polite"></p></div></section>
+    <section class="results" aria-labelledby="results-heading"><div class="section-heading"><div><p class="eyebrow">RESULT</p><h2 id="results-heading">みんなの集計</h2></div></div><div id="results-gate" class="panel"><h3>みんなの投票見る？みんなに流される？</h3><button id="show-results-button" class="button button--secondary" type="button">それでも集計結果を見る</button></div><div id="results-content" hidden><div class="section-heading"><p class="hint">集計結果</p><button id="refresh-button" class="text-button" type="button">更新</button></div><div id="results-list" class="results-list"></div><div id="matrix-wrap" class="matrix-wrap"></div></div></section>
   </main>
   <div id="results-confirm-modal" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="results-confirm-title"><div class="modal"><h3 id="results-confirm-title">本当に見る？</h3><div class="modal-actions"><button id="cancel-results-button" class="button modal-cancel" type="button">やめる</button><button id="confirm-results-button" class="button button--primary" type="button">見る</button></div></div></div>
-  <template id="candidate-template"><article class="stay-card"><div class="stay-card__image"><span>SAUNA STAY</span></div><div class="stay-card__body"><div class="stay-card__top"><div><p class="stay-card__area"></p><h3 class="stay-card__name"></h3></div></div><p class="stay-card__summary"></p><dl class="facts"></dl><div class="rating-block"><div><strong>行きたい度</strong><span class="rating-value">未評価</span></div><div class="stars" role="radiogroup" aria-label="5段階評価"></div><button class="clear-rating text-button" type="button">評価を外す</button></div><a class="official-link button button--secondary" target="_blank" rel="noopener noreferrer">詳細を見る</a></div></article></template>
+  <template id="candidate-template"><article class="stay-card"><div class="stay-card__image"><span>SAUNA STAY</span></div><div class="stay-card__body"><div class="stay-card__top"><div><p class="stay-card__area"></p><h3 class="stay-card__name"></h3></div></div><p class="stay-card__summary"></p><dl class="facts"></dl><div class="rating-block"><div><strong>行きたい度</strong><span class="rating-value">未投票</span></div><div class="stars" role="radiogroup" aria-label="行きたい度5段階"></div><button class="clear-rating text-button" type="button">投票を取り消す</button></div><a class="official-link button button--secondary" target="_blank" rel="noopener noreferrer">詳細を見る</a></div></article></template>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="./config.js?v=20260916-13"></script>
-  <script src="./data.js?v=20260916-13"></script>
-  <script src="./app.js?v=20260916-13"></script>
+  <script src="./config.js?v=20260916-14"></script>
+  <script src="./data.js?v=20260916-14"></script>
+  <script src="./app.js?v=20260916-14"></script>
 </body>
 </html>
