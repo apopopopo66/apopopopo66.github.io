@@ -1,7 +1,7 @@
 window.TRAVEL_VOTE_DATA = {
   tripSlug: "nokogiriyama-sauna-2026",
   title: "鋸山サウナ旅行 2026",
-  subtitle: "2026/11/7(土)〜11/8(日)・5人｜行きたい宿を評価して、みんなで決めよう",
+  subtitle: "2026/11/7(土)〜11/8(日)・5人｜行きたい宿をみんなでみんなでみんなでみんなでみんなで考えよう",
   candidates: [
     { id:"bros-resort-kyonan", name:"BROS RESORT KYONAN", area:"鋸南", priceTotal:"150,000円（11/7・5名）", pricePerPerson:"30,000円 / 人", sauna:"屋内＋屋外サウナ / 水風呂 / ジャグジー", bbq:"あり", access:"鋸山ロープウェーまで車で約10分", summary:"サウナ設備をしっかり楽しみたいグループ向けの一棟貸し。", url:"https://bros-resort.com/", imageUrl:"https://bros-resort.com/assets/production/indoor-sauna-slide-20260526_026.jpeg" },
     { id:"bask-hota", name:"BASK HOTA", area:"保田", priceTotal:"50,000円（11/7・5名）", pricePerPerson:"10,000円 / 人", sauna:"サウナあり（詳細は予約ページで確認）", bbq:"要確認", access:"鋸山に近い保田エリア", summary:"5名で約5万円とコスパの良い候補。2026/11/7は空きがない可能性があるため、予約可否は要確認。", url:"https://bask-hota.com/", imageUrl:"https://storage.googleapis.com/excamp-renewal-upload/user717/photos/media/campsites/8a9b40cf2b5a48f3b180d1000b9f30fa.jpg" },
